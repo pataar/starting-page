@@ -8,6 +8,8 @@ class SearchBar extends Component {
 	constructor(props) {
 		super(props);
 
+		this.autoFocus = props.autoFocus;
+
 		this.state = {
 			focused: false
 		}
@@ -22,7 +24,7 @@ class SearchBar extends Component {
 			<div className={className}>
 				<FontAwesomeIcon style={{ height: '2rem' }} icon={["fas", "search"]} />
 				<input
-					autoFocus="true"
+					autoFocus={this.autoFocus}
 					type="text"
 					onBlur={() => this.setState({ focused: false })}
 					onFocus={() => this.setState({ focused: true })}
@@ -33,7 +35,11 @@ class SearchBar extends Component {
 }
 
 SearchBar.propTypes = {
+	autoFocus: PropTypes.bool
+};
 
+SearchBar.defaultProps = {
+	autoFocus: true
 };
 
 export default SearchBar;

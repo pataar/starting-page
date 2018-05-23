@@ -6,7 +6,7 @@
 
 	border-radius: 5px;
 	overflow:hidden;
-	justify-content: center;
+	justify-content: left;
 	align-items: center;
 
 
@@ -21,12 +21,12 @@
 
 .SearchBar.focused input {
 
-	width: 500px;
+	width: 600px;
 }
 
 .SearchBar svg {
 
-	margin: 20px 10px;
+	margin: 20px 30px;
 }
 
 .SearchBar input {
@@ -37,7 +37,7 @@
 	font-size: 3rem;
 	margin: 10px;
 	outline: none;
-	width: 150px;
+	width: 200px;
 
 	transition: all .1s ease-in-out;
 }

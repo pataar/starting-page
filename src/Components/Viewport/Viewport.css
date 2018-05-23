@@ -1,6 +1,7 @@
 .Viewport {
 	background-color: #3333;
 	background-size: cover;
+	background-position: center center;
 
 	width: 100vw;
 	height: 100vh;

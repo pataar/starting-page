@@ -6,6 +6,8 @@ import Clock from '../Clock/Clock';
 import Theme from '../Theme/theme';
 import Favbar from '../Favbar/Favbar';
 
+import config from '../../config';
+
 import fontawesome from '@fortawesome/fontawesome'
 import solid from '@fortawesome/fontawesome-free-solid'
 import brands from '@fortawesome/fontawesome-free-brands'
@@ -28,9 +30,9 @@ class App extends Component {
 		return (
 			<Viewport>
 				<div className="Center" style={centerStyle}>
-					<HelloMessage name="Pataar" />
-					<Clock />
-					<SearchBar />
+					<HelloMessage name={config.name} />
+					<Clock dateFormat={config.dateFormat} timeFormat={config.timeFormat} />
+					<SearchBar autoFocus={config.autoFocus} />
 				</div>
 
 				<Favbar />
