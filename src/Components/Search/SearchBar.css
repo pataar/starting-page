@@ -1,0 +1,43 @@
+.SearchBar {
+	background: rgba(0,0,0, .2);
+	display:flex;
+
+	margin: 80px;
+
+	border-radius: 5px;
+	overflow:hidden;
+	justify-content: center;
+	align-items: center;
+
+
+	transition: all .1s ease-in-out;
+
+}
+
+.SearchBar.focused {
+
+	background: rgba(0,0,0, .4);
+}
+
+.SearchBar.focused input {
+
+	width: 500px;
+}
+
+.SearchBar svg {
+
+	margin: 20px 10px;
+}
+
+.SearchBar input {
+	flex: 1;
+	background: none;
+	border:0;
+	color: #fff;
+	font-size: 3rem;
+	margin: 10px;
+	outline: none;
+	width: 150px;
+
+	transition: all .1s ease-in-out;
+}

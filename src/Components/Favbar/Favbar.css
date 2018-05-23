@@ -1,0 +1,51 @@
+
+.Favbar {
+  background-color: #222;
+  height: 60px;
+  padding: 20px;
+  position: absolute;
+
+  bottom:0;
+  left:0;
+  right: 0;
+
+  color: white;
+
+  display: flex;
+  justify-content: center;
+}
+.Favbar > .group {
+
+	border-right: 1px solid rgb(59, 59, 59);
+	padding-right: 10px;
+	margin-right: 10px;
+}
+.Favbar > .group .items {
+	display: flex;
+}
+
+.Favbar > .group .label {
+	font-size: .7rem;
+	text-align: center;
+	padding: 5px 0 0 0;
+	color: rgb(59, 59, 59);
+}
+.Favbar > .group:last-child {
+	border:0;
+	padding:0;
+	margin:0;
+}
+
+.Favbar > .group .items > a {
+	display: block;
+	color:white;
+	text-decoration: none;
+	font-size: 3rem;
+	padding: 0 1rem;
+	opacity:.75;
+	transition: opacity .1s ease-out;
+}
+
+.Favbar > .group .items > a:hover {
+	opacity:1;
+}
