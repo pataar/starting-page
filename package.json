@@ -7,12 +7,12 @@
     "@fortawesome/fontawesome": "^1.1.8",
     "@fortawesome/fontawesome-free-brands": "^5.0.13",
     "@fortawesome/fontawesome-free-solid": "^5.0.13",
-    "@fortawesome/react-fontawesome": "^0.0.20",
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "date-fns": "^1.29.0",
-    "react": "^16.3.2",
-    "react-dom": "^16.3.3",
-    "react-scripts": "1.1.4",
-    "roboto-fontface": "^0.9.0"
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "react-scripts": "^4.0.3",
+    "roboto-fontface": "^0.10.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -23,6 +23,18 @@
     "deploy": "gh-pages -d build"
   },
   "devDependencies": {
-    "gh-pages": "^1.1.0"
+    "gh-pages": "^3.2.3"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
